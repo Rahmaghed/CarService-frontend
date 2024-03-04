@@ -1,0 +1,45 @@
+.navbar{
+    background-color: #ece9e9;
+    height: 60px;
+    margin: 5px;
+    border-radius: 10px;
+
+}
+.logo{
+    width: 120px;
+    height: 100px;
+    position: fixed;
+    top: -14px; /* Adjust the top position as needed */
+}
+.navbar-brand{
+    font-weight: 600;
+    font-size: 24px;
+}
+.navbar-toggler{
+    border: none;
+
+}
+.nav-link{
+    color: #4a4552;
+    font-weight: 500;
+    position: relative;
+}
+.nav-link:hover,.nav-link:active{
+    color: black;
+}
+.nav-link::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background-color: rgb(85, 83, 83);
+    visibility: hidden;
+    transition: 0.3s ease-in-out;
+}
+.nav-link:hover::before{
+    width: 100%;
+    visibility: visible;
+}
